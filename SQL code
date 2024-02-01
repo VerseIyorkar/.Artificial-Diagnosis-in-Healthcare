@@ -1,1 +1,9 @@
 
+##1. Create a database called Diagnoses
+create database Diagnoses;
+use diagnoses;
+select * from aiinhealthcare;
+alter table aiinhealthcare add constraint primary key(Patient_ID);
+
+
+
