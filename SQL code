@@ -1,9 +1,11 @@
 
-##1. Create a database called Diagnoses
+##1. Create a database called Diagnoses, table called aiinhealthcare, and assign primary key.
 create database Diagnoses;
 use diagnoses;
 select * from aiinhealthcare;
 alter table aiinhealthcare add constraint primary key(Patient_ID);
 
 
-
+##2. How many unique medications and diagnosis are in the table?
+select distinct diagnosis from aiinhealthcare;
+select distinct medication from aiinhealthcare;
