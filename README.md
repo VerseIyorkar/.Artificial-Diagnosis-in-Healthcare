@@ -25,7 +25,11 @@ In the data preparation phase, I performed the following tasks;
 
 
 ### Exploratory Data Analysis
-
+Exploratory Data Analysis involves exploring the data to answer key questions such as;
+- How many unique medications and diagnosis?
+- What is the highest temperature and blood pressure?
+- What is the average blood pressure value for each gender?
+- Group diseases by gender and perform overall count
 
 
 
