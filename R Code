@@ -1,0 +1,13 @@
+my.data <- AIHealthCareDataset
+library(tidyverse)
+
+##1 Is there a correlation between the Confidence level prediction using AI tools and the detected Heart Rates per patient?
+p1 <- ggplot(my.data, aes(AI_Diagnosis_Confidence, Heart_Rate)) +
+      geom_point() +
+      geom_smooth(method="lm")
+
+
+Does a higher AI diagnosis Confidence level mean an accurate prediction, thereby leading to a faster recovery time?
+p2 <- ggplot(my.data, aes(AI_Diagnosis_Confidence,Recovery_Time)) +
+  geom_point() +
+  geom_smooth(method="lm")
