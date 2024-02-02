@@ -16,3 +16,18 @@ select diagnosis, temperature from aiinhealthcare order by temperature desc;
 select distinct diagnosis, blood_pressure from aiinhealthcare order by blood_pressure desc;
 
 
+##4. What are the average blood pressure values for each gender?
+select Gender, avg(Blood_Pressure) AS Average_BP
+from diagnoses.aiinhealthcare
+group by Gender
+
+
+##5. Group diseases by gender and determine perform a count.
+select a.Gender, 
+a.Diagnosis,
+count(a.Patient_ID) AS Count
+from diagnoses.aiinhealthcare a 
+group by a.Gender, a.Diagnosis
+order by a.Gender, a.Diagnosis
+
+
