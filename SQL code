@@ -9,3 +9,10 @@ alter table aiinhealthcare add constraint primary key(Patient_ID);
 ##2. How many unique medications and diagnosis are in the table?
 select distinct diagnosis from aiinhealthcare;
 select distinct medication from aiinhealthcare;
+
+
+##3. What is the highest temperature and blood pressure in the table?
+select diagnosis, temperature from aiinhealthcare order by temperature desc;
+select distinct diagnosis, blood_pressure from aiinhealthcare order by blood_pressure desc;
+
+
